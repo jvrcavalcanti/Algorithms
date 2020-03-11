@@ -1,5 +1,5 @@
-from node import Node
-from queue import Queue
+from classes.node import Node
+from classes.queue import Queue
 
 
 def bfs(initial, goal_test, successors):

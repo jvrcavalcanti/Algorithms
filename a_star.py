@@ -1,5 +1,5 @@
-from priority_queue import PriorityQueue
-from node import Node
+from classes.priority_queue import PriorityQueue
+from classes.node import Node
 
 
 def a_star(initial, goal_test, successors, heuristic):

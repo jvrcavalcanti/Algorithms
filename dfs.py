@@ -1,5 +1,5 @@
-from node import Node
-from stack import Stack
+from classes.node import Node
+from classes.stack import Stack
 
 
 def dfs(initial, goal_test, successors):

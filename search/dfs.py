@@ -1,9 +1,9 @@
-from classes.node import Node
-from classes.queue import Queue
+from data_structure.node import Node
+from data_structure.stack import Stack
 
 
-def bfs(initial, goal_test, successors):
-    frontier = Queue()
+def dfs(initial, goal_test, successors):
+    frontier = Stack()
     frontier.push(Node(initial))
     explored = {initial}
 
@@ -19,4 +19,5 @@ def bfs(initial, goal_test, successors):
 
             explored.add(node.state)
             frontier.push(Node(parent, node))
+
     return None

@@ -1,14 +1,14 @@
-from classes.node import Node
-from classes.stack import Stack
+from data_structure import Node
+from data_structure import Queue
 
 
-def dfs(initial, goal_test, successors):
-    frontier = Stack()
+def bfs(initial, goal_test, successors):
+    frontier = Queue()
     frontier.push(Node(initial))
     explored = {initial}
 
     while not frontier.empty:
-        node = frontier.pop()
+        node: Node = frontier.pop()
 
         if goal_test(node.state):
             return node
@@ -19,5 +19,4 @@ def dfs(initial, goal_test, successors):
 
             explored.add(node.state)
             frontier.push(Node(parent, node))
-
     return None

@@ -12,11 +12,11 @@ class Node(object):
         return self.g + self.h == other.g + other.h
 
 
-def node_to_path(node: Node):
-    path = [node]
-    while node.parent is not None:
-        node = node.parent
-        path.append(node)
-    path.reverse()
-    return path
+# def node_to_path(node: Node):
+#     path = [node]
+#     while node.parent is not None:
+#         node = node.parent
+#         path.append(node)
+#     path.reverse()
+#     return path
 

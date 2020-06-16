@@ -1,6 +1,7 @@
-from data_structure import Edge
+from data_structure import Edge, node_path
 from typing import TypeVar, Generic, List
-from search import bfs, dfs, node_path
+from search import bfs, dfs
+
 
 
 V = TypeVar("V")
